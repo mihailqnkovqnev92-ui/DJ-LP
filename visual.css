@@ -1,0 +1,247 @@
+/* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #00c6ff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #00c6ff;
+  border-bottom: 2px solid white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 5px 50px white;
+  position: sticky;
+  top: 0;
+}
+
+.top-bar {
+  background: #00c8ff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+} 
+
+.menu-bar {
+  min-height: 10px;
+  top: 7px;
+  z-index: 7777;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-weight:600;
+  gap: 20px;
+  padding: 1cap;
+  margin: 0;
+  text-decoration: none;
+}
+
+.menu-bar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu-icons{
+  display: flex;
+  gap: 10px;
+}
+
+.menu-icons a{
+  color: #fff;
+  font-size: 12px;
+}
+
+
+.container {
+  width: min(100% - 2rem, 1100px);
+  margin: 0 auto;
+  padding: 1.25rem 0;
+
+}
+
+.dj-gigs h2 {
+  text-align: center;
+}
+
+.dj-gigs {
+  margin-top: 25px;
+
+  color: white;
+
+  border-top: 2px solid white;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  border-bottom: 2px solid white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.gigs-gallery {
+  display: grid;
+  grid-template-columns: 1fr ;/* mobile default */
+  gap: 1rem;
+  text-align: center;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.gig-card img {
+  border-radius: 20px;
+  width:300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #00c6ff;
+  border-top: 2px solid white;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 5px 50px white;
+  margin-top: 25px;
+  color: white;
+}
+
+.subscribe  {
+  display: colo;
+  justify-self: center;
+  align-items: center;
+  background: rgba(255,255,255,0.15);
+  border-radius: 30px;
+  padding: 5px;
+  border: 0.1rem solid white; 
+}
+
+.subscribe input {
+  background: transparent;
+  border:#000;
+  outline: none;
+  padding: 10px 15px;
+  color: #fff;
+  width: 220px;
+  font-size: 20px;
+}
+
+.subscribe input::placeholder{
+  color: rgba(255,255,255,0.7);
+}
+.subscribe button{
+  border: none;
+  background: #fff;
+  color: #000;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subscribe button:active {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 900px) {
+  .top-bar {
+    justify-content: center;
+    flex-wrap: nowrap; /* desktop: single line */
+  }
+
+  .menu-bar {
+    font-size: 25px ;
+  }
+
+  .gig-card img{
+    width: 500px;
+    box-shadow: 0 0 10px black;
+  }
+  .menu-icons a {
+    font-size: 20px ;
+  }
+  
+  .gigs-gallery {
+    grid-template-columns: repeat(3, 1fr); /* desktop: 3 columns */
+    gap: 1.5rem;
+  }
+.footer {
+  display: flex;
+  background-color: #00c6ff;
+  border-top: 2px solid white;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 5px 50px white;
+  margin-top: 25px;
+  color: white;
+}
+
+.footer-left{
+  justify-self: start;
+  padding-left: 50px;
+}
+.footer-center {justify-self: center;}
+
+.footer-right {
+  justify-self: end;
+  padding-right: 50px;
+}
+
+.subscribe  {
+  display: colo;
+  justify-self: center;
+  align-items: center;
+  background: rgba(255,255,255,0.15);
+  border-radius: 30px;
+  padding: 5px;
+  border: 0.1rem solid white; 
+}
+
+.subscribe input {
+  background: transparent;
+  border:#000;
+  outline: none;
+  padding: 10px 15px;
+  color: #fff;
+  width: 220px;
+  font-size: 20px;
+}
+
+.subscribe input::placeholder{
+  color: rgba(255,255,255,0.7);
+}
+.subscribe button{
+  border: none;
+  background: #fff;
+  color: #000;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subscribe button:active {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+}
