@@ -176,64 +176,6 @@ body {
 
 /* ПЪРВА СКЕЦИЯ НАЧАЛО */
 
-.dj-gigs {
-  padding: 0px 0px;
-  text-align: center;
-  color: #ffffff;
-}
-.dj-gigs middle {
-  padding: 0px 0px;
-  text-align: center;
-  color: #ffffff;
-}
-.dj-gigs h2 {
-  margin-top: 10;
-  margin-bottom:0;
-  font-size: 32px;
-  background: #00c6ff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.gigs-gallery {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-  padding-top: 30px;
-  background: linear-gradient(
-  360deg,
-  #ff0080 0%,
-  #7928ca 30%,
-  #2afadf 65%,
-  #00c6ff 100%
-);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
- 
-}
-.gig-card {
-  width: 500px;
-}
-.gig-card img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.gig-card:hover img {
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-}
-.gig-card img:hover {
-  transform: scale(1.05);
-}
-.gig-card p {
-  margin-top: 20px;
-  font-weight: 600;
-  font-size: 200%;
-}
 /* ПЪРВА СКЕЦИЯ КРАЙ */
 
 .footer {
