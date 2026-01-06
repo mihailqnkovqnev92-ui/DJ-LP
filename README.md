@@ -1,1 +1,1 @@
-# DJ-LP
+Only desktop version
